@@ -116,5 +116,6 @@ export const refreshToken = async (req, res) => {
 	res.json({ message: 'Token refreshed successfully' });
 };
 
-// TODO: implement getProfile controller
-export const getProfile = async (req, res) => {};
+export const getProfile = async (req, res) => {
+	res.json(req.user);
+};
